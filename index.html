@@ -11,8 +11,15 @@
     p {
       font-family: "Montserrat", sans-serif;
       font-size: 14px;
-      font-weight: 400;
-           
+      font-weight: 400;           
+    }
+
+    .nome_cartas_destaque {
+      font-family: "Montserrat", sans-serif;
+      font-size: 15px;
+      font-weight: bold;
+      height: 35px;
+      margin-top: 5px;
     }
 
     a {
@@ -69,12 +76,13 @@
       gap: 30px;               
     }
 
-    #nome_card_destaque_a {
+    #card_destaque{
       font-size: 13px;
       font-weight: bold;
       text-align: center;
-      background-color: antiquewhite;
-      padding: 15PX;
+      background-color: antiquewhite;      
+      padding: 15px;
+      margin-top: 10px;
       border: 1px solid #10121C;
       border-radius: 20px;
       box-shadow: 0 1px 7px       
@@ -122,20 +130,20 @@
       <p>Confira as cartas em destaque da Millenium Shop e descubra raridades, clássicos e grandes tesouros para fortalecer sua coleção e dominar os duelos!</p>
       <div id="card_destaque_a">
 
-        <div id="nome_card_destaque_a">
-        <p>ULTIMATE TYRANNO</p>
+        <div id="card_destaque">
+        <p class="nome_cartas_destaque">ULTIMATE TYRANNO</p>
         <img src="assets/619.png" alt="Carta Ultimate Tyranno" width="150"><br>
         <button id="botao_compra" type="button">Comprar Carta</button>
         </div>
 
-        <div id="nome_card_destaque_a">
-          <p>DARK MAGICIAN</p>
+        <div id="card_destaque">
+          <p class="nome_cartas_destaque">DARK MAGICIAN </p>
         <img src="assets/dark_magician.jpg" alt="Carta Dark Magician" width="150"><br>
         <button id="botao_compra" type="button">Comprar Carta</button>
         </div>
 
-        <div id="nome_card_destaque_a">
-          <p>SWORDS OF REVEALING LIGHT</p>
+        <div id="card_destaque">
+          <p class="nome_cartas_destaque">SWORDS OF <br> REVEALING LIGHT</p>
         <img src="assets/swords_of_reveling_light.png" alt="Carta Swords of Revealing Light" width="150"><br>
         <button id="botao_compra" type="button">Comprar Carta</button>
         </div>
