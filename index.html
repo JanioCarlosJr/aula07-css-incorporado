@@ -12,7 +12,7 @@
       font-family: "Montserrat", sans-serif;
       font-size: 14px;
       font-weight: 400;
-      color: #;      
+           
     }
 
     a {
@@ -63,7 +63,16 @@
     }
 
     #card_destaque_a {      
-      max-width: 150px;      
+        
+      display: flex;
+      justify-content: center;
+      gap: 30px;               
+    }
+
+    #nome_card_destaque_a {
+      font-size: 13px;
+      font-weight: bold;
+      text-align: center;
       background-color: antiquewhite;
       padding: 15PX;
       border: 1px solid #10121C;
@@ -71,14 +80,8 @@
       box-shadow: 0 1px 7px       
     }
 
-    #nome_card_destaque_a {
-      font-size: 13px;
-      font-weight: bold;
-      text-align: center;      
-    }
-
     #botao_compra {
-      margin: ;
+      margin: 10px;
       background-color: #7B2638; 
       color: white;
       font-family: "Marcellus",sans-serif;
@@ -118,9 +121,25 @@
       <h2>Destaques da Semana</h2>
       <p>Confira as cartas em destaque da Millenium Shop e descubra raridades, clássicos e grandes tesouros para fortalecer sua coleção e dominar os duelos!</p>
       <div id="card_destaque_a">
-        <p id="nome_card_destaque_a">ULTIMATE TYRANNO</p>
+
+        <div id="nome_card_destaque_a">
+        <p>ULTIMATE TYRANNO</p>
         <img src="assets/619.png" alt="Carta Ultimate Tyranno" width="150"><br>
         <button id="botao_compra" type="button">Comprar Carta</button>
+        </div>
+
+        <div id="nome_card_destaque_a">
+          <p>DARK MAGICIAN</p>
+        <img src="assets/dark_magician.jpg" alt="Carta Dark Magician" width="150"><br>
+        <button id="botao_compra" type="button">Comprar Carta</button>
+        </div>
+
+        <div id="nome_card_destaque_a">
+          <p>SWORDS OF REVEALING LIGHT</p>
+        <img src="assets/swords_of_reveling_light.png" alt="Carta Swords of Revealing Light" width="150"><br>
+        <button id="botao_compra" type="button">Comprar Carta</button>
+        </div>
+
       </div>
 
       
