@@ -19,22 +19,22 @@
     b {
       font-family: "Montserrat", sans-serif;
       font-size: 14px;
-      font-weight: 400;
+      font-weight: bolder;
       max-width: 850px;
       margin: auto;
     }
 
     label {
       font-family: "Montserrat", sans-serif;
-      font-size: 14px;
-      font-weight: 400;
+      font-size: 12px;
+      font-weight: 600;
       max-width: 850px;
       margin: auto;
     }
 
     ::placeholder {
       font-family: "Montserrat", sans-serif;
-      font-size: 14px;
+      font-size: 12px;
       font-weight: 400;
       max-width: 850px;
       margin: auto;
@@ -200,6 +200,7 @@
       margin-bottom: 25px;      
       align-items: center;
       background-color: antiquewhite;
+      box-shadow: 1px 1px 1px;
     }
 
     footer{
@@ -209,20 +210,45 @@
       color: white;
     }
 
+    #header_pagina {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .header_itens {
+      margin-top: 25px;
+      margin-right: 30px;
+    }
+
+
+
   </style>
 </head>
 
 <body id="background_site">  
   <header id="cabecalho_pagina">
-    <div>
+    <div id="header_pagina">
+
+      <div class="header_itens">
+        <img src="assets/millenium_pluzzle.png" alt="Imagem do enigma do milenio" width="100">
+      </div>
+
+      <div>
       <h1>MILLENIUM CARD SHOP</h1>
       <p id="slogan_pagina">A loja ideal para sua coleção TCG</p>
       <nav id="barra_navegacao">        
         <a href="#sobre">Sobre</a>
         <a href="#destaques">Destaques</a>
         <a href="#servicos">Serviços</a>
-        <a href="#recurso">Preços / Contato</a>
+        <a href="#recurso">Preços / Contato</a>       
       </nav>
+      </div>
+
+      <div class="header_itens">
+        <img src="assets/millenium_pluzzle.png" alt="Imagem do enigma do milenio" width="100">
+      </div>
+      
     </div>
   </header>
   <main>
