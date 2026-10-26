@@ -16,6 +16,30 @@
       margin: auto;                       
     }
 
+    b {
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      max-width: 850px;
+      margin: auto;
+    }
+
+    label {
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      max-width: 850px;
+      margin: auto;
+    }
+
+    ::placeholder {
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      max-width: 850px;
+      margin: auto;
+    }
+
     .texto_principal {
       font-family: "Montserrat", sans-serif;
       font-size: 14px;
@@ -160,8 +184,21 @@
 
     .imagem_servicos {
       margin: 0;
+      margin-bottom: 45px;
+      align-items: center;                
+    }
+
+    #cadastro {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .formulario_cadastro {
+      margin: 0;
+      margin-top: 25px;      
       align-items: center;
-                
+      background-color: antiquewhite;
     }
 
   </style>
@@ -243,10 +280,45 @@
           </div>
       </div>    
     </section>
+
+    <hr>
     
     <section id="recurso">
       <h2>Contato</h2>
       <p>Entre em contato com a Millenium Shop! Estamos prontos para tirar suas dúvidas, receber sugestões e ajudar com informações sobre cartas, acessórios, restauração e nossos produtos. Envie sua mensagem e faça parte do nosso universo de duelistas e colecionadores.</p>
+      
+      <div id="cadastro">        
+        <div class="formulario_cadastro">
+          <form action="#" method="POST">
+            <fieldset>
+               <legend><b>Formulario de Cadastro.</b></legend>
+
+               <label for="campo-nome">Nome Completo</label><br>
+               <input type="text" name="nome_completo" id="campo-nome" placeholder="Informe seu nome" required size="50">
+
+               <br><br>
+
+               <label for="campo-email">Email</label><br>
+               <input type="text" name="email_cadastro" id="campo-email" placeholder="Informe seu email" required size="50">
+             
+               <br><br>
+             
+               <label for="campo-data-nascimento">Data de Nascimento</label><br>             
+               <input type="date" name="data-nascimento" id="campo-data-nascimento" required>
+             
+               <br><br>       
+             
+               <label for="campo-apelido">Apelido</label><br>             
+               <input type="text" name="apelido" id="campo-apelido" placeholder="Informe um apelido para uso." required size="50">
+             
+               <br><br>
+             
+               <button type="submit"><b>Enviar!</b></button>
+               <button type="reset"><b>Redefir campos</b></button>                       
+            </fieldset>
+          </form> 
+        </div>        
+      </div>
     </section>
   </main>
 
