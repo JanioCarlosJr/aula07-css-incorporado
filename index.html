@@ -16,6 +16,24 @@
       margin: auto;                       
     }
 
+    .texto_principal {
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      max-width: 850px;
+      margin-bottom: 15px;  
+    }
+
+    .servicos_prestados_texto {
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      margin: 0;
+      max-width: 500px;
+      align-items: center;
+      
+    }
+
     
     .informacao_extra {
       font-family: "Montserrat", sans-serif;
@@ -26,7 +44,8 @@
       margin-top: 30px;
       background-color: #D4AF37;
       padding: 15px;
-      border-left: 10px solid black;                     
+      border-left: 10px solid black;
+      margin-bottom: 40px;                     
     }
 
     .nome_cartas_destaque {
@@ -113,7 +132,7 @@
       box-shadow: 0 1px 7px       
     }
 
-    #botao_compra {
+    .botao_compra {
       margin: 10px;
       background-color: #7B2638; 
       color: white;
@@ -128,7 +147,21 @@
     .imagem_ilustrativa {      
       margin: auto;
       display: flex;
-      justify-content: center;         
+      justify-content: center;
+      margin-bottom: 50px;
+      border-radius: 15px;         
+    }
+
+    #servicos_prestados {
+      display: flex;
+      justify-content: center;
+      gap: 20px;      
+    }
+
+    .imagem_servicos {
+      margin: 0;
+      align-items: center;
+                
     }
 
   </style>
@@ -152,10 +185,12 @@
     <section id="sobre">
       <article>
       <h2>O que é a Millenium Shop?</h2>
-      <p>A Millenium Shop é o lugar ideal para duelistas e colecionadores que vivem a paixão pelo universo de Yu-Gi-Oh!. Inspirada na nostalgia de Forbidden Memories, nossa loja reúne cartas, produtos e tudo o que torna cada duelo uma experiência única. Aqui, cada carta carrega uma história e cada jogador tem a chance de construir seu próprio legado. Mais do que uma loja, a Millenium Shop é um ponto de encontro para quem compartilha a paixão pelas cartas e a nostalgia dos grandes duelos. Valorizamos cada detalhe, desde a preservação de cartas especiais até os acessórios que protegem e destacam sua coleção. Seja você um duelista experiente ou alguém que está começando sua jornada, aqui seu amor por Yu-Gi-Oh! encontra um lugar para crescer, evoluir e criar novas histórias. Prepare seu deck e venha conhecer a Millenium Shop! Explore nossa loja, descubra cartas incríveis, encontre acessórios para sua coleção e embarque nessa aventura com a gente. Seu próximo grande duelo começa aqui!</p>
+      <p class="texto_principal">A Millenium Shop é o lugar ideal para duelistas e colecionadores que vivem a paixão pelo universo de Yu-Gi-Oh!. Inspirada na nostalgia de Forbidden Memories, nossa loja reúne cartas, produtos e tudo o que torna cada duelo uma experiência única. Aqui, cada carta carrega uma história e cada jogador tem a chance de construir seu próprio legado. Mais do que uma loja, a Millenium Shop é um ponto de encontro para quem compartilha a paixão pelas cartas e a nostalgia dos grandes duelos. Valorizamos cada detalhe, desde a preservação de cartas especiais até os acessórios que protegem e destacam sua coleção. Seja você um duelista experiente ou alguém que está começando sua jornada, aqui seu amor por Yu-Gi-Oh! encontra um lugar para crescer, evoluir e criar novas histórias. Prepare seu deck e venha conhecer a Millenium Shop! Explore nossa loja, descubra cartas incríveis, encontre acessórios para sua coleção e embarque nessa aventura com a gente. Seu próximo grande duelo começa aqui!</p>
       <img class="imagem_ilustrativa" src="assets/secao_sobre_ilustrativo.png" alt="Imagem ilustritva de uma mesa com artas e itens relacionados a yugioh" width="400">
       </article>
     </section>
+
+    <hr>
 
     <section id="destaques">
       <h2>Destaques da Semana</h2>
@@ -167,25 +202,25 @@
         <div class="card_destaque">
         <p class="nome_cartas_destaque">ULTIMATE TYRANNO</p>
         <img src="assets/619.png" alt="Carta Ultimate Tyranno" width="150" title="Este card pode atacar todos os monstros que seu oponente controla, uma vez cada. Durante sua Fase de Batalha, se você controlar um "Ultimate Tyranno" que possa atacar, monstros que não sejam ele estão impedidos de declarar ataque."><br>
-        <button id="botao_compra" type="button">Comprar Carta</button>
+        <button class="botao_compra" type="button">Comprar Carta</button>
         </div>
 
         <div class="card_destaque">
           <p class="nome_cartas_destaque">DARK MAGICIAN </p>
         <img src="assets/dark_magician.jpg" alt="Carta Dark Magician" width="150" title="Um mago supremo em termos de ataque e defesa."><br>
-        <button id="botao_compra" type="button">Comprar Carta</button>
+        <button class="botao_compra" type="button">Comprar Carta</button>
         </div>
 
         <div class="card_destaque">
           <p class="nome_cartas_destaque">SWORDS OF <br> REVEALING LIGHT</p>
         <img src="assets/swords_of_reveling_light.png" alt="Carta Swords of Revealing Light" width="150" title="Permanece no campo até ser destruída na Fase Final do 3º turno do oponente. Ao ser ativada, ela vira todos os monstros do oponente com a face para baixo para cima (sem ativar efeitos de virar) e impede que os monstros do oponente declarem ataques enquanto estiver com a face para cima no campo."><br>
-        <button id="botao_compra" type="button">Comprar Carta</button>
+        <button class="botao_compra" type="button">Comprar Carta</button>
         </div>
 
         <div class="card_destaque">
           <p class="nome_cartas_destaque">MIRROR FORCE</p>
         <img src="assets/mirror_force.png" alt="Carta Mirror Force" width="150" title="Quando seu oponente declarar ataque, destrua todos os cards de face para cima do campo dele e negue o ataque."><br>
-        <button id="botao_compra" type="button">Comprar Carta</button>
+        <button class="botao_compra" type="button">Comprar Carta</button>
         </div>
         
       </div>
@@ -194,12 +229,19 @@
       <aside>Todas as cartas informadas são para coleção, veja o regulamento da banlist para mais informações.</aside>
       </div>    
       
-
     </section>
     
+    <hr>
+
     <section id="servicos">
+
       <h2>Serviços</h2>
-      <p>A Millenium Shop oferece serviços de restauração e conservação de cartas, além de acessórios para proteção, organização e personalização de coleções. Também buscamos trazer produtos e soluções para jogadores e colecionadores que desejam preservar suas cartas, aprimorar seus decks e manter viva a paixão pelo universo dos duelos.</p>
+      <div id="servicos_prestados">        
+          <p class="servicos_prestados_texto">A Millenium Shop oferece serviços de restauração e conservação de cartas, além de acessórios para proteção, organização e personalização de coleções. Trabalhamos para oferecer produtos e soluções que ajudem jogadores e colecionadores a preservar suas cartas, aprimorar seus decks e valorizar cada peça de sua coleção. Seja para recuperar aquela carta especial, proteger itens raros ou encontrar novos acessórios para seus duelos, buscamos atender às necessidades de cada duelista com dedicação e cuidado. Mais do que produtos e serviços, queremos manter viva a paixão pelo universo de Yu-Gi-Oh!, unindo nostalgia, colecionismo e a emoção de cada duelo. Afinal, toda carta tem sua história, e nossa missão é ajudar você a preservar cada uma delas e continuar escrevendo seu próprio legado no mundo dos duelos.</p>
+          <div class="imagem_servicos">
+             <img src="assets/repair_kit.png" alt="Kit de reparo de cartas, com todas as ferramentas necessarias para o trabalho." width="300">
+          </div>
+      </div>    
     </section>
     
     <section id="recurso">
